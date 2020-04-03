@@ -1,0 +1,151 @@
+html{
+    font-size:10px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #f7f7f7;
+}
+
+h1{
+    font-size:3rem;
+    font-family: sans-serif;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size:2.1rem;
+}
+
+h2:nth-of-type(2){
+    padding-top:1.8rem;
+    border-top:3px solid lightskyblue;
+}
+
+.questionnaireCovid{
+    padding:1rem;
+    background-color: rgb(235, 232, 232);
+    border-radius:1rem;
+    border:5px solid lightskyblue;
+    width:80%;
+    font-size:2rem;
+    font-family:sans-serif;
+    margin:0 auto;
+}
+
+
+
+input[type="text"]{
+    margin-left:2rem;
+    padding:1rem;
+    font-size:1.5rem;
+    border-radius:1rem;
+    border:2px solid transparent;
+    width:10%;
+}
+
+input[type="text"]:hover{
+    border:2px solid lightskyblue;
+}
+
+input[type="number"]{
+    margin-left:2rem;
+    padding:1rem;
+    font-size:1.5rem;
+    border-radius:1rem;
+    border:2px solid transparent;
+    width:10%;
+
+}
+
+input[type="number"]:hover{
+    border:2px solid lightskyblue;
+
+}
+
+input[type="submit"]{
+    padding:1rem;
+    font-size:1.7rem;
+    border-radius:1rem;
+    border:3px solid black;
+    cursor:pointer;
+    font-weight:700;
+}
+
+input[type="submit"]:hover{
+    background-color:lightskyblue;
+}
+
+
+input[type="radio"]:hover{
+    box-shadow:3px 3px 3px  lightskyblue;
+}
+
+p:last-child{
+    text-align:center;
+}
+
+.result{
+    display:none;
+    height:40vh;
+    width:40vw;
+    padding:2rem;
+    margin:0 auto;
+    border:3px solid lightskyblue;
+    border-radius:2rem;
+    text-align:center;
+    font-size:3rem;
+    z-index:1000;
+}
+
+a{
+    text-decoration:none;
+    color:rgb(52, 110, 146);
+}
+
+/* Ces beaux boutons radio ont été récupérés sur le site https://tipue.com/blog/radio-checkbox/ puis adaptés aux besoins du formulaire */
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f7f7f7;
+     color: black;
+     top: 6px;
+     height: 25px;
+     width: 25px;
+     border: 1px solid gray;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1  sans-serif;
+     left: 8px;
+     top: 5px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 2rem/1.7  sans-serif;
+     color: black;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+} 

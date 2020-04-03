@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app2.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Questionnaire d'orientation Covid-19</h1>
+    <form class="questionnaireCovid">
+      <h2>Questions sur les facteurs pronostiques défavorables au terrain
+        </h2>
+        <!-- âge -->
+        <p>1. Quel est votre âge ?</p>
+        <div class="age">
+              <input type="number" name="age" required>
+        </div>
+
+        <!-- poids -->
+        <p>2. Quel est votre poids (en kg, ex: "80,5")?</p>
+        <div class="poids">
+                <input type="text" name="poids" pattern="\d+(,|\.)\d+|\d+" required>
+        </div>
+
+        <!-- âge -->
+        <p>3. Quelle est votre taille (en mètres, ex: "1,75") ?</p>
+        <div class="taille">
+                <input type="text" name="taille" pattern="\d,\d+|\d\.\d+|[^\w]\d[^\w]" required>
+        </div>
+
+        <!-- hypertension artérielle -->
+
+        <p>4. Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?</p>
+        <div>
+            <input type="radio" class="form-radio" class="form-radio" id="hypertensionOui" name="hypertension" value="oui" required>
+            <label for="hypertensionOui">Oui</label>
+            </div>
+            
+            <div>
+            <input type="radio" class="form-radio" id="hypertensionNon" name="hypertension" value="non" required>
+            <label for="hypertensionNon">Non</label>
+            </div>
+
+            <div>
+                <input type="radio" class="form-radio" id="hypertensionNsp" name="hypertension" value="oui" required>
+                <label for="hypertensionNsp">Je ne sais pas</label>
+                </div>
+
+        <!-- diabétique -->
+        <p>5. Êtes-vous diabétique ?</p>
+        <div>
+        <input type="radio" class="form-radio" id="diabetiqueOui" name="diabetique" value="oui" required>
+        <label for="diabetiqueOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="diabetiqueNon" name="diabetique" value="non">
+        <label for="diabetiqueNon">Non</label>
+        </div>
+
+        <!-- cancer -->
+
+        <p>6. Avez-vous ou avez-vous eu un cancer dans les 3 dernières années ?        </p>
+        <div>
+        <input type="radio" class="form-radio" id="cancerOui" name="cancer" value="oui" required>
+        <label for="cancerOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="cancerNon" name="cancer" value="non">
+        <label for="cancerNon">Non</label>
+        </div>
+
+        <!-- maladie respiratoire -->
+        <p>7. Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?        </p>
+        <div>
+        <input type="radio" class="form-radio" id="maladieRespiratoireOui" name="maladieRespiratoire" value="oui" required>
+        <label for="maladieRespiratoireOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="maladieRespiratoireNon" name="maladieRespiratoire" value="non">
+        <label for="maladieRespiratoireNon">Non</label>
+        </div>
+
+        <!-- insuffisance rénale chronique dialysée -->
+        <p>8. Avez-vous une insuffisance rénale chronique dialysée ?        </p>
+        <div>
+        <input type="radio" class="form-radio" id="insuffisanceRenaleOui" name="insuffisanceRenale" value="oui" required>
+        <label for="insuffisanceRenaleOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="insuffisanceRenaleNon" name="insuffisanceRenale" value="non">
+        <label for="insuffisanceRenaleNon">Non</label>
+        </div>
+
+        <!-- foie -->
+        <p>9. Avez-vous une maladie chronique du foie ?        </p>
+        <div>
+        <input type="radio" class="form-radio" id="foieOui" name="foie" value="oui" required>
+        <label for="foieOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="foieNon" name="foie" value="non">
+        <label for="foieNon">Non</label>
+        </div>
+
+        <!-- enceinte -->
+        <p>10. Êtes-vous enceinte ?        </p>
+        <div>
+        <input type="radio" class="form-radio" id="enceinteOui" name="enceinte" value="oui" required>
+        <label for="enceinteOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="enceinteNon" name="enceinte" value="non">
+        <label for="enceinteNon">Non</label>
+        </div>
+
+        <!-- defenses immunitaires -->
+        <p>11. Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?        </p>
+        <div>
+        <input type="radio" class="form-radio" id="defensesImmunitairesOui" name="defensesImmunitaires" value="oui" required>
+        <label for="defensesImmunitairesOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="defensesImmunitairesNon" name="defensesImmunitaires" value="non">
+        <label for="defensesImmunitairesNon">Non</label>
+        </div>
+
+        <!-- traitement immunosupresseur -->
+        <p>12. Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive).</p>
+        <div>
+        <input type="radio" class="form-radio" id="traitementImmunosupresseurOui" name="traitementImmunosupresseur" value="oui" required>
+        <label for="traitementImmunosupresseurOui">Oui</label>
+        </div>
+        
+        <div>
+        <input type="radio" class="form-radio" id="traitementImmunosupresseurNon" name="traitementImmunosupresseur" value="non">
+        <label for="traitementImmunosupresseurNon">Non</label>
+        </div>
+
+        <div>
+        <input type="radio" class="form-radio" id="traitementImmunosupresseurNsp" name="traitementImmunosupresseur" value="non">
+        <label for="traitementImmunosupresseurNsp">Je ne sais pas</label>
+        </div>
+
+        <h2>Questions sur les symptômes</h2>
+    
+        <!-- fievre -->
+        <p>13. Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?
+</p>
+        <div>
+            <input type="radio" class="form-radio" id="fievreOui" name="fievre" value="oui" required>
+            <label for="fievreOui">Oui</label>
+          </div>
+          
+          <div>
+            <input type="radio" class="form-radio" id="fievreNon" name="fievre" value="non">
+            <label for="fievreNon">Non</label>
+          </div>
+
+          <div class="siTemperature">
+            <p>13-1. Si oui, quelle a été votre température la plus élevée ces dernières 48h (en degrés Celsius, ex: "37,2") ?</p>
+              <input type="text" name="temperature" pattern="\d+(,|\.)\d+|\d+">
+          </div>
+        
+        <!-- toux -->
+        <p>14. Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?</p>
+                <div>
+                    <input type="radio" class="form-radio" id="touxOui" name="toux" value="oui" required>
+                    <label for="touxOui">Oui</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" class="form-radio" id="touxNon" name="toux" value="non">
+                    <label for="touxNon">Non</label>
+                  </div>
+
+        <!-- goût, odorat -->
+        <p>15. Avez-vous noté une forte diminution de votre goût ou de votre odorat ces derniers jours ?</p>
+        <div>
+            <input type="radio" class="form-radio" id="odoratOui" name="odoratGout" value="oui" required>
+            <label for="odoratOui">Oui</label>
+          </div>
+          
+          <div>
+            <input type="radio" class="form-radio" id="odoratNon" name="odoratGout" value="non">
+            <label for="odoratNon">Non</label>
+          </div>
+
+        <!-- courbatures, etc. -->
+        <p>16. Avez-vous un mal de gorge ou des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?
+        </p>
+        <div>
+            <input type="radio" class="form-radio" id="courbaturesEtcOui" name="courbaturesEtc" value="oui" required>
+            <label for="courbaturesEtcOui">Oui</label>
+          </div>
+          
+          <div>
+            <input type="radio" class="form-radio" id="courbaturesEtcNon" name="courbaturesEtc" value="non">
+            <label for="courbaturesEtcNon">Non</label>
+          </div>
+
+        <!-- diarrhée -->
+        <p>17. Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?</p>
+        <div>
+            <input type="radio" class="form-radio" id="diarrheeOui" name="diarrhee" value="oui" required>
+            <label for="diarrheeOui">Oui</label>
+          </div>
+          
+          <div>
+            <input type="radio" class="form-radio" id="diarrheeNon" name="diarrhee" value="non">
+            <label for="diarrheeNon">Non</label>
+          </div>
+
+          <!-- fatigue -->
+          <p>18. Avez-vous une fatigue inhabituelle ces derniers jours ?        </p>
+          <div>
+              <input type="radio" class="form-radio" id="fatigueOui" name="fatigue" value="oui" required>
+              <label for="fatigueOui">Oui</label>
+            </div>
+            
+            <div>
+              <input type="radio" class="form-radio" id="fatigueNon" name="fatigue" value="non">
+              <label for="fatigueNon">Non</label>
+            </div>
+
+            <!-- si fatigue... -->
+          <p>18-1. Si oui, cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?</p>
+          <div>
+              <input type="radio" class="form-radio" id="siFatigueOui" name="siFatigue" value="oui">
+              <label for="siFatigueOui">Oui</label>
+            </div>
+            
+            <div>
+              <input type="radio" class="form-radio" id="siFatigueNon" name="siFatigue" value="non">
+              <label for="siFatigueNon">Non</label>
+            </div>
+
+              <!-- boire, manger -->
+          <p>19. Êtes-vous dans l’impossibilité de vous alimenter ou de boire DEPUIS 24 HEURES OU PLUS ?</p>
+          <div>
+              <input type="radio" class="form-radio" id="boireMangerOui" name="boireManger" value="oui" required>
+              <label for="boireMangerOui">Oui</label>
+            </div>
+            
+            <div>
+              <input type="radio" class="form-radio" id="boireMangerNon" name="boireManger" value="non">
+              <label for="boireMangerNon">Non</label>
+            </div>
+
+                <!-- manque souffle -->
+          <p>20. Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?
+        </p>
+          <div>
+              <input type="radio" class="form-radio" id="manqueSouffleOui" name="manqueSouffle" value="oui" required>
+              <label for="manqueSouffleOui">Oui</label>
+            </div>
+            
+            <div>
+              <input type="radio" class="form-radio" id="manqueSouffleNon" name="manqueSouffle" value="non">
+              <label for="manqueSouffleNon">Non</label>
+            </div>
+            <p>
+            <input type="submit" value="Valider le test">
+        </p>
+
+    </form>
+
+    <div class="result">
+    </div>
+</body>
+</html>
