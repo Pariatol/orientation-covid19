@@ -149,3 +149,18 @@ label
      -moz-osx-font-smoothing: grayscale;
      cursor: pointer;
 } 
+
+@media(max-width:960px){
+    .result{
+        width:90%;
+        text-align:justify;
+        height:auto;
+        padding:0.5rem;
+        margin:0 auto;
+        border:3px solid lightskyblue;
+        border-radius:2rem;
+        text-align:center;
+        font-size:2.5rem;
+        z-index:1000;
+    }
+}
