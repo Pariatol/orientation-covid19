@@ -164,3 +164,9 @@ label
         z-index:1000;
     }
 }
+
+.footer{
+    font-family:sans-serif;
+    font-size:2rem;
+    text-align:center;
+}
